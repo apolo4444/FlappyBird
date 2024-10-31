@@ -97,7 +97,7 @@ GamePlayManager={
 
     spawnPipes: function(){
         //this.pipes_pair=[];
-        this.random=game.rnd.integerInRange(-30,30);
+        this.random=game.rnd.integerInRange(-20,20);
         for(let i=0;i<2;i++){
 
             // var pipe=game.add.sprite(this.x,this.y,"pipe");
@@ -309,7 +309,7 @@ GamePlayManager={
     update:function(){
         //console.log("update");
         if(this.flagFirstMouseDown && !this.endGame){
-            this.parallaxEffect();
+            //this.parallaxEffect();
             this.pipesMove();
             this.birdMove();
             this.spawnTimer+=dt;

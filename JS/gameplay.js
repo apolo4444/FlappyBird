@@ -98,8 +98,9 @@ GamePlayManager={
     spawnPipes: function(){
         //this.pipes_pair=[];
         this.random=game.rnd.integerInRange(-20,20);
+        this.y=0;
         for(let i=0;i<2;i++){
-
+            
             // var pipe=game.add.sprite(this.x,this.y,"pipe");
             // this.pipes_pair[this.count]=pipe;
             // this.pipes_pair[this.count].anchor.setTo(0.5,0.5);
@@ -110,6 +111,7 @@ GamePlayManager={
                 var pipe=game.add.sprite(this.x,this.y,"pipe2");
                 this.pipes_pair[this.count]=pipe;
                 this.pipes_pair[this.count].anchor.setTo(0.5,0.5);
+                //this.y=0;
                 this.y+=pipe.height+GAP_HEIGHT;
                 this.y+=(this.random);
                 //this.pipes_pair[this.count].scale.setTo(1);
